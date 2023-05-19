@@ -41,7 +41,7 @@ class RegisterViewViewModel: ObservableObject {
                 if let error {
                     print("Error: \(error)")
                 }
-                print("Store db successfully")
+                print("Store user to db successfully")
             }
     }
     

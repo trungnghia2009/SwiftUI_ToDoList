@@ -27,7 +27,7 @@
 		2C229DD92A162528004AA465 /* ProfileViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C229DD82A162528004AA465 /* ProfileViewViewModel.swift */; };
 		2C229DDB2A162540004AA465 /* ToDoListViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C229DDA2A162540004AA465 /* ToDoListViewViewModel.swift */; };
 		2C229DDD2A162559004AA465 /* ToDoListItemViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C229DDC2A162559004AA465 /* ToDoListItemViewViewModel.swift */; };
-		2C229DDF2A162566004AA465 /* NewItemVIewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C229DDE2A162566004AA465 /* NewItemVIewViewModel.swift */; };
+		2C229DDF2A162566004AA465 /* NewItemViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C229DDE2A162566004AA465 /* NewItemViewViewModel.swift */; };
 		2C229DE12A162573004AA465 /* LoginViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C229DE02A162573004AA465 /* LoginViewViewModel.swift */; };
 		2C229DE32A16257B004AA465 /* RegisterViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C229DE22A16257B004AA465 /* RegisterViewViewModel.swift */; };
 		2C229DE62A163401004AA465 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C229DE52A163401004AA465 /* HeaderView.swift */; };
@@ -54,7 +54,7 @@
 		2C229DD82A162528004AA465 /* ProfileViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewViewModel.swift; sourceTree = "<group>"; };
 		2C229DDA2A162540004AA465 /* ToDoListViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListViewViewModel.swift; sourceTree = "<group>"; };
 		2C229DDC2A162559004AA465 /* ToDoListItemViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListItemViewViewModel.swift; sourceTree = "<group>"; };
-		2C229DDE2A162566004AA465 /* NewItemVIewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewItemVIewViewModel.swift; sourceTree = "<group>"; };
+		2C229DDE2A162566004AA465 /* NewItemViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewItemViewViewModel.swift; sourceTree = "<group>"; };
 		2C229DE02A162573004AA465 /* LoginViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewViewModel.swift; sourceTree = "<group>"; };
 		2C229DE22A16257B004AA465 /* RegisterViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewViewModel.swift; sourceTree = "<group>"; };
 		2C229DE52A163401004AA465 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
@@ -98,7 +98,6 @@
 				2C229DC42A162276004AA465 /* Others */,
 				2C229DC32A16223D004AA465 /* Models */,
 				2C229DC12A16221C004AA465 /* Views */,
-				2C229DC22A162228004AA465 /* ViewModels */,
 				2C229DB02A161C9B004AA465 /* Preview Content */,
 			);
 			path = ToDoList;
@@ -116,25 +115,15 @@
 			isa = PBXGroup;
 			children = (
 				2C229DE82A170D3C004AA465 /* CustomViews */,
-				2C229DED2A17517B004AA465 /* Main */,
-				2C229DE42A1633E8004AA465 /* Login */,
-				2C229DE72A170D0E004AA465 /* Register */,
+				2C229DED2A17517B004AA465 /* MainView */,
+				2C229DE42A1633E8004AA465 /* LoginView */,
+				2C229DE72A170D0E004AA465 /* RegisterView */,
 				2C229DEE2A175891004AA465 /* ToDoListView */,
-				2C229DC52A1623EA004AA465 /* ProfileView.swift */,
-				2C229DD02A1624BB004AA465 /* ToDoListItemView.swift */,
-				2C229DC92A162423004AA465 /* NewItemView.swift */,
+				2C229DF02A176A02004AA465 /* ToDoListItemView */,
+				2C229DEF2A1763EE004AA465 /* ProfileView */,
+				2C229DF12A177090004AA465 /* NewItemView */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		2C229DC22A162228004AA465 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-				2C229DD82A162528004AA465 /* ProfileViewViewModel.swift */,
-				2C229DDC2A162559004AA465 /* ToDoListItemViewViewModel.swift */,
-				2C229DDE2A162566004AA465 /* NewItemVIewViewModel.swift */,
-			);
-			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		2C229DC32A16223D004AA465 /* Models */ = {
@@ -157,22 +146,22 @@
 			path = Others;
 			sourceTree = "<group>";
 		};
-		2C229DE42A1633E8004AA465 /* Login */ = {
+		2C229DE42A1633E8004AA465 /* LoginView */ = {
 			isa = PBXGroup;
 			children = (
 				2C229DCC2A162440004AA465 /* LoginView.swift */,
 				2C229DE02A162573004AA465 /* LoginViewViewModel.swift */,
 			);
-			path = Login;
+			path = LoginView;
 			sourceTree = "<group>";
 		};
-		2C229DE72A170D0E004AA465 /* Register */ = {
+		2C229DE72A170D0E004AA465 /* RegisterView */ = {
 			isa = PBXGroup;
 			children = (
 				2C229DCE2A16245A004AA465 /* RegisterView.swift */,
 				2C229DE22A16257B004AA465 /* RegisterViewViewModel.swift */,
 			);
-			path = Register;
+			path = RegisterView;
 			sourceTree = "<group>";
 		};
 		2C229DE82A170D3C004AA465 /* CustomViews */ = {
@@ -184,13 +173,13 @@
 			path = CustomViews;
 			sourceTree = "<group>";
 		};
-		2C229DED2A17517B004AA465 /* Main */ = {
+		2C229DED2A17517B004AA465 /* MainView */ = {
 			isa = PBXGroup;
 			children = (
 				2C229DAC2A161C9A004AA465 /* MainView.swift */,
 				2C229DD62A162517004AA465 /* MainViewViewModel.swift */,
 			);
-			path = Main;
+			path = MainView;
 			sourceTree = "<group>";
 		};
 		2C229DEE2A175891004AA465 /* ToDoListView */ = {
@@ -200,6 +189,33 @@
 				2C229DDA2A162540004AA465 /* ToDoListViewViewModel.swift */,
 			);
 			path = ToDoListView;
+			sourceTree = "<group>";
+		};
+		2C229DEF2A1763EE004AA465 /* ProfileView */ = {
+			isa = PBXGroup;
+			children = (
+				2C229DC52A1623EA004AA465 /* ProfileView.swift */,
+				2C229DD82A162528004AA465 /* ProfileViewViewModel.swift */,
+			);
+			path = ProfileView;
+			sourceTree = "<group>";
+		};
+		2C229DF02A176A02004AA465 /* ToDoListItemView */ = {
+			isa = PBXGroup;
+			children = (
+				2C229DD02A1624BB004AA465 /* ToDoListItemView.swift */,
+				2C229DDC2A162559004AA465 /* ToDoListItemViewViewModel.swift */,
+			);
+			path = ToDoListItemView;
+			sourceTree = "<group>";
+		};
+		2C229DF12A177090004AA465 /* NewItemView */ = {
+			isa = PBXGroup;
+			children = (
+				2C229DC92A162423004AA465 /* NewItemView.swift */,
+				2C229DDE2A162566004AA465 /* NewItemViewViewModel.swift */,
+			);
+			path = NewItemView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,7 +305,7 @@
 				2C229DE12A162573004AA465 /* LoginViewViewModel.swift in Sources */,
 				2C229DD72A162517004AA465 /* MainViewViewModel.swift in Sources */,
 				2C229DEA2A171391004AA465 /* TLButton.swift in Sources */,
-				2C229DDF2A162566004AA465 /* NewItemVIewViewModel.swift in Sources */,
+				2C229DDF2A162566004AA465 /* NewItemViewViewModel.swift in Sources */,
 				2C229DC82A16240E004AA465 /* ToDoListView.swift in Sources */,
 				2C229DCF2A16245A004AA465 /* RegisterView.swift in Sources */,
 				2C229DD92A162528004AA465 /* ProfileViewViewModel.swift in Sources */,
@@ -437,6 +453,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -469,6 +486,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
