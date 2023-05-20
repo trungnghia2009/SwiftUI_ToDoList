@@ -21,3 +21,9 @@ extension Encodable {
         }
     }
 }
+
+extension Date {
+    static func formatDate(date: TimeInterval) -> String {
+        Date(timeIntervalSince1970: date).formatted(date: .abbreviated, time: .shortened)
+    }
+}

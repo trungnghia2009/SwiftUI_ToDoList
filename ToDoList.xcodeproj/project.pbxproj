@@ -33,6 +33,9 @@
 		2C229DE62A163401004AA465 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C229DE52A163401004AA465 /* HeaderView.swift */; };
 		2C229DEA2A171391004AA465 /* TLButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C229DE92A171391004AA465 /* TLButton.swift */; };
 		2C229DEC2A174F2D004AA465 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C229DEB2A174F2D004AA465 /* Extensions.swift */; };
+		2CB25DF72A187BE700EA91CC /* EditItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB25DF62A187BE700EA91CC /* EditItemView.swift */; };
+		2CB25DF92A187BFA00EA91CC /* EditItemViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB25DF82A187BFA00EA91CC /* EditItemViewViewModel.swift */; };
+		2CB25DFB2A18884200EA91CC /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CB25DFA2A18884200EA91CC /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +63,9 @@
 		2C229DE52A163401004AA465 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		2C229DE92A171391004AA465 /* TLButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TLButton.swift; sourceTree = "<group>"; };
 		2C229DEB2A174F2D004AA465 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		2CB25DF62A187BE700EA91CC /* EditItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditItemView.swift; sourceTree = "<group>"; };
+		2CB25DF82A187BFA00EA91CC /* EditItemViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditItemViewViewModel.swift; sourceTree = "<group>"; };
+		2CB25DFA2A18884200EA91CC /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +125,7 @@
 				2C229DE42A1633E8004AA465 /* LoginView */,
 				2C229DE72A170D0E004AA465 /* RegisterView */,
 				2C229DEE2A175891004AA465 /* ToDoListView */,
+				2CB25DF52A187BB200EA91CC /* EditView */,
 				2C229DF02A176A02004AA465 /* ToDoListItemView */,
 				2C229DEF2A1763EE004AA465 /* ProfileView */,
 				2C229DF12A177090004AA465 /* NewItemView */,
@@ -142,6 +149,7 @@
 				2C229DBF2A162046004AA465 /* GoogleService-Info.plist */,
 				2C229DAA2A161C9A004AA465 /* ToDoListApp.swift */,
 				2C229DEB2A174F2D004AA465 /* Extensions.swift */,
+				2CB25DFA2A18884200EA91CC /* Launch Screen.storyboard */,
 			);
 			path = Others;
 			sourceTree = "<group>";
@@ -218,6 +226,15 @@
 			path = NewItemView;
 			sourceTree = "<group>";
 		};
+		2CB25DF52A187BB200EA91CC /* EditView */ = {
+			isa = PBXGroup;
+			children = (
+				2CB25DF62A187BE700EA91CC /* EditItemView.swift */,
+				2CB25DF82A187BFA00EA91CC /* EditItemViewViewModel.swift */,
+			);
+			path = EditView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -286,6 +303,7 @@
 			files = (
 				2C229DB22A161C9B004AA465 /* Preview Assets.xcassets in Resources */,
 				2C229DAF2A161C9B004AA465 /* Assets.xcassets in Resources */,
+				2CB25DFB2A18884200EA91CC /* Launch Screen.storyboard in Resources */,
 				2C229DC02A162046004AA465 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -305,6 +323,7 @@
 				2C229DE12A162573004AA465 /* LoginViewViewModel.swift in Sources */,
 				2C229DD72A162517004AA465 /* MainViewViewModel.swift in Sources */,
 				2C229DEA2A171391004AA465 /* TLButton.swift in Sources */,
+				2CB25DF92A187BFA00EA91CC /* EditItemViewViewModel.swift in Sources */,
 				2C229DDF2A162566004AA465 /* NewItemViewViewModel.swift in Sources */,
 				2C229DC82A16240E004AA465 /* ToDoListView.swift in Sources */,
 				2C229DCF2A16245A004AA465 /* RegisterView.swift in Sources */,
@@ -317,6 +336,7 @@
 				2C229DAB2A161C9A004AA465 /* ToDoListApp.swift in Sources */,
 				2C229DD52A1624F0004AA465 /* ToDoListItem.swift in Sources */,
 				2C229DCA2A162423004AA465 /* NewItemView.swift in Sources */,
+				2CB25DF72A187BE700EA91CC /* EditItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,6 +472,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -485,6 +506,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
